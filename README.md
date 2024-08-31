@@ -1,2 +1,2 @@
 # zawkin-bobo-qissalari
-Website to write and share my coding journey for you.
+Website to write about my coding journey for you.
