@@ -23,6 +23,7 @@
 body {
     font-family: "FiraCode", monospace;
     font-weight: normal;
+    background-color: aqua;
 }
 
 #logo {

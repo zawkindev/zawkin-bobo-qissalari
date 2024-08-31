@@ -2,35 +2,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../static/css/output.css" rel="stylesheet" />
+    <link href="static/css/output.css" rel="stylesheet" />
+    <link href="static/css/index.css" rel="stylesheet" />
     <title>Zawkin Bobo Qissalari</title>
   </head>
 
   <body>
-    <div
-      id="root"
-      class="bg-black-600 text-white min-h-screen flex justify-center py-16"
-    >
-      <div className="flex flex-col gap-8">
-        <h1 className="text-4xl font-extrabold" id="logo">{{ .Name }}</h1>
-        {{ range .Posts }}
-        <div
-          className="w-[700px] bg-black-300 flex flex-col p-4 gap-4 rounded-lg hover:bg-black-50 hover:cursor-pointer"
-        >
-          <div className="flex justify-between text-gray-400">
-            <div className="flex gap-3">
-              {{ range .Tags }}
+    <div class="bg-black-600 text-white min-h-screen flex justify-center py-16">
+      <div class="flex flex-col gap-8">
+        <h1 class="text-4xl font-extrabold" id="logo">Zawkin Bobo Qissalari</h1>
+        {{ range . }}
+        <a href="localhost:8080/{{ .ID }}">
+          <div
+            class="w-[700px] bg-black-300 flex flex-col p-4 gap-4 rounded-lg hover:bg-black-50 hover:cursor-pointer"
+          >
+            <div class="flex justify-between text-gray-400">
+              <!-- <div class="flex gap-3"> 
+              { range .Tags }}
               <div
-                className="font-[JetBrainsMono] font-medium bg-black-100 px-1 rounded-sm hover:text-white hover:cursor-pointer hover:bg-black-600"
+                class="font-[JetBrainsMono] font-medium bg-black-100 px-1 rounded-sm hover:text-white hover:cursor-pointer hover:bg-black-600"
               >
-                #{{ . }}
+                #{ . }}
               </div>
-              {{ end }}
+              { end }}
+             </div> -->
+
+              <p>{{ .Date }}</p>
             </div>
-            <p>{{ .Date }}</p>
+            <p class="text-2xl break-word">{{ .Title }}</p>
           </div>
-          <p className="text-2xl break-word">{{ .Title }}</p>
-        </div>
+        </a>
         {{ end }}
       </div>
     </div>

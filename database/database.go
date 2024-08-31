@@ -3,13 +3,15 @@ package database
 import (
 	"database/sql"
 	"log"
+
+	_ "github.com/lib/pq" // or _ "github.com/mattn/go-sqlite3" for SQLite
 )
 
 var DB *sql.DB
 
 func Init() {
 	var err error
-	DB, err = sql.Open("postgres", "user=postgres password=m dbname=blog sslmode=required")
+	DB, err = sql.Open("postgres", "user=postgres password=m dbname=blog sslmode=require")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -37,5 +39,4 @@ func createTable() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
 }
