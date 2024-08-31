@@ -4,16 +4,16 @@
 
 @font-face {
     font-family: "FiraCode";
-    src: url("../public/fonts/FiraCode/FiraCode-Regular.ttf") format("truetype"),
-        url("../public/fonts/FiraCode/FiraCode-Medium.ttf") format("truetype"),
-        url("../public/fonts/FiraCode/FiraCode-SemiBold.ttf") format("truetype"),
-        url("../public/fonts/FiraCode/FiraCode-Bold.ttf") format("truetype");
+    src: url("../fonts/FiraCode/FiraCode-Regular.ttf") format("truetype"),
+        url("../fonts/FiraCode/FiraCode-Medium.ttf") format("truetype"),
+        url("../fonts/FiraCode/FiraCode-SemiBold.ttf") format("truetype"),
+        url("../fonts/FiraCode/FiraCode-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "JetBrainsMono";
-    src: url("../public/fonts/JetBrainsMono/JetBrainsMono-Regular.ttf") format("truetype"),
-        url("../public/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.ttf") format("truetype");
+    src: url("../fonts/JetBrainsMono/JetBrainsMono-Regular.ttf") format("truetype"),
+        url("../fonts/JetBrainsMono/JetBrainsMono-ExtraBold.ttf") format("truetype");
 }
 
 * {
